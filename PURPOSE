@@ -21,7 +21,7 @@ I.      Differentiable
         So, for example, functions such as f(x) = sqrt(x) are differentiable when x >= 0,
         but not for other values of x.
 
-(FUTURE GEOFF: CHECK THE BELOW PARAGRAPHS FOR CORRECTNESS WHEN YOU GET A CHANCE))
+(FUTURE GEOFF: CHECK THE BELOW PARAGRAPHS FOR CORRECTNESS WHEN YOU GET A CHANCE)
         Continuity is the test for differentiability because differentials (NOTE: not the
         same thing as derivatives) are not exact--differentiability only means that the
         differential of a function, df(h) = f(x + h) - f(x) rapidly approaches f'(h) as h
