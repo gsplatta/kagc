@@ -30,8 +30,8 @@ I.      Differentiable
         Multivariable calculus is more or less the same, except x can approach h along an
         infinite number of paths (some of which are much easier than others) rather than
         just the two of single- variable calculus. In multivariable calculus, a function
-        is not differentiable if approaching f(c1, c2, ..., cn) along two different paths
-        reaches two different limits.
+        is not differentiable if approaching y = f(c1, c2, ..., cn) along two different paths
+        reaches two different values for y.
 
 
 II.     Noneuclidean
