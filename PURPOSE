@@ -1,0 +1,38 @@
+This is still very much a work in progress.
+
+KAGC (Kick-ass Graphing Calculator, for lack of a better name as of yet) is a project
+intended to perform symbolic manipulation and graphing differential geometry, in C.
+GTK will be responsible for window management, and OpenGL/Mesa will be responsible for
+the graphical aspects of KAGC.
+
+Differential Geometry is the application of the principles of calculus to differentiable
+noneuclidean surfaces/manifolds. In order to accomplish this, we must know what the
+following terms mean:
+
+I.      Differentiable
+        A function f(x) = y is differentiable at a point if, as x approaches c and f(c) = L,
+        there exists a delta, defined as |delta| < 1, such that as delta approaches zero,
+        there exists a value epsilon where f(c +/- delta) = L +/- epsilon, where
+        epsilon < delta for all values epsilon and delta. Epsilon is proportionally less
+        than delta. This is the rigorous, formal definition of being differentiable--
+        continuity.
+
+        This basically means that the function is continuous at c. And that a limit exists.
+        So, for example, functions such as f(x) = sqrt(x) are differentiable when x >= 0,
+        but not for other values of x.
+
+(FUTURE GEOFF: CHECK THE BELOW PARAGRAPHS FOR CORRECTNESS WHEN YOU GET A CHANCE))
+        Continuity is the test for differentiability because differentials (NOTE: not the
+        same thing as derivatives) are not exact--differentiability only means that the
+        differential of a function, df(h) = f(x + h) - f(x) rapidly approaches f'(h) as h
+        approaches zero. This is in single-variable calculus.
+
+        Multivariable calculus is more or less the same, except x can approach h along an
+        infinite number of paths (some of which are much easier than others) rather than
+        just the two of single- variable calculus.
+
+
+II.     Noneuclidean
+III.    Manifold
+IV.     Surface
+        A surface is a manifold in two dimensions.
