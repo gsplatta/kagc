@@ -9,7 +9,7 @@ Differential Geometry is the application of the principles of calculus to differ
 noneuclidean surfaces/manifolds. In order to accomplish this, we must know what the
 following terms mean:
 
-I.      Differentiable
+I.      Differentiability
         A function f(x) = y is differentiable at a point if, as x approaches c and f(c) = L,
         there exists a delta, defined as |delta| < 1, such that as delta approaches zero,
         there exists a value epsilon where f(c +/- delta) = L +/- epsilon, where
@@ -36,6 +36,5 @@ I.      Differentiable
 
 
 II.     Noneuclidean
-III.    Manifold
-IV.     Surface
-        A surface is a manifold in two dimensions.
+III.    Manifolds and Surfaces
+        
