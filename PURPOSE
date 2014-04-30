@@ -1,9 +1,12 @@
 This is still very much a work in progress.
 
 KAGC (Kick-ass Graphing Calculator, for lack of a better name as of yet) is a project
-intended to perform symbolic manipulation and graphing differential geometry, in C.
+intended to perform symbolic manipulation and to graph differential geometry, written in C.
 GTK will be responsible for window management, and OpenGL/Mesa will be responsible for
 the graphical aspects of KAGC.
+
+There is a library called PARI which could manage the symbolic manipulation aspect of KAGC. I
+have not yet taken a good look at it, but it is a set of C libaries make for this purpose.
 
 Differential Geometry is the application of the principles of calculus to differentiable
 noneuclidean surfaces/manifolds. In order to accomplish this, we must know what the
