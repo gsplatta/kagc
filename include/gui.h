@@ -1,6 +1,7 @@
 /* 
  * kagc is differential geometrical graphing software. 
- * worksheet.h is responsible for the general worksheet events in the GUI.
+ * gui.h is responsible for the basic callbacks and macros which don't 
+ * belong anywhere else.
  * 
  * Copyright (C) 2014 Geoffrey Platta
  * 
@@ -17,10 +18,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */ 
-
-#ifndef __WORKSHEET_H__
-#define __WORKSHEET_H__
+#ifndef __GUI_H__
+#define __GUI_H__
 
 #include <gtk/gtk.h>
 
-#endif /* __WORKSHEET_H__ */
+#define DEFAULT_WIDTH 500
+#define DEFAULT_HEIGHT 700
+
+/* Exit events */
+static void destroy_event (GtkWidget *widget, gpointer data);
+static gboolean delete_event (GtkWidget *widget, GdkEvent *event, gpointer data);
+
+#endif /* __GUI_H__ */
