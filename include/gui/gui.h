@@ -23,8 +23,8 @@
 
 #include <gtk/gtk.h>
 
-#define DEFAULT_WIDTH 500
-#define DEFAULT_HEIGHT 700
+#define DEFAULT_WIDTH 1024
+#define DEFAULT_HEIGHT 600
 
 /* Exit events */
 static void destroy_event (GtkWidget *widget, gpointer data);

@@ -33,8 +33,8 @@ int main(int argc, char *argv[]) {
 	GtkWidget *window;
 	GtkWidget *box;
 	GtkWidget *tab_bar;
-	GtkWidget *grid;
-	GtkWidget *menu;
+	//GtkWidget *grid;
+	GtkWidget *menubar;
 	GtkWidget *worksheet;
 	GtkWidget *statusbar;
 	GtkWidget *scroll_window;
@@ -47,14 +47,11 @@ int main(int argc, char *argv[]) {
 	gtk_window_set_default_size (GTK_WINDOW (window), DEFAULT_WIDTH, DEFAULT_HEIGHT);
 	gtk_window_set_title (GTK_WINDOW (window), "KAGC");
 
-	box = gtk_box_new (FALSE, 0);
+	box = gtk_vbox_new (FALSE, 0);
 	gtk_container_add (GTK_CONTAINER (window), box);
 
-	/* 	 2. Create the Grid. */
-	grid = gtk_grid_new ();
-
-	/*   3. Create the Menu. */
-	menu 	 = gtk_menu_bar_new ();
+	/* 	 2. Create the Menu. */
+	menubar	 = gtk_menu_bar_new ();
 	filemenu = gtk_menu_new ();
 	editmenu = gtk_menu_new ();
 	viewmenu = gtk_menu_new ();
@@ -100,23 +97,36 @@ int main(int argc, char *argv[]) {
 	gtk_menu_item_set_submenu (GTK_MENU_ITEM (help), helpmenu);
 	gtk_menu_shell_append (GTK_MENU_SHELL (helpmenu), about_menu_item);
 
-	gtk_box_pack_start (GTK_BOX (box), menu, FALSE, FALSE, 14);
+	gtk_menu_shell_append (GTK_MENU_SHELL (menubar), file);
+	gtk_menu_shell_append (GTK_MENU_SHELL (menubar), edit);
+	gtk_menu_shell_append (GTK_MENU_SHELL (menubar), view);
+	gtk_menu_shell_append (GTK_MENU_SHELL (menubar), help);
 
-	/* 4. Implement event listening and callback functions for the widgets. */
+	gtk_box_pack_start (GTK_BOX (box), menubar, FALSE, FALSE, 3);
+
+	/* 3. Create the Worksheet */
+
+	
+
+	/* 4. Create the Status Bar. */
+
+
+
+	/* 5. Implement event listening and callback functions for the widgets. */
 	g_signal_connect (G_OBJECT (window), "delete_event", G_CALLBACK (delete_event), NULL);
 	g_signal_connect (G_OBJECT (window), "destroy", G_CALLBACK (destroy_event), NULL);
 
 	g_signal_connect_swapped(G_OBJECT(window), "destroy", G_CALLBACK(gtk_main_quit), NULL);
 	g_signal_connect(G_OBJECT(close_menu_item), "activate", G_CALLBACK(gtk_main_quit), NULL);
 
-	/* 5. Show the widgets. */
+	/* 6. Show the widgets. */
 	gtk_widget_show_all (window);
 
-	/* 6. Begin the event-handling loop. */
+	/* 7. Begin the event-handling loop. */
 
 	gtk_main ();
 
-	/* 7. Shut down the application. 
+	/* 8. Shut down the application. 
 	 *		This was taken care of with the g_signal_connect calls with "delete_event" and "destroy_event,
 	 *		but this is remaining here if cleanup is needed before exiting. */
 
