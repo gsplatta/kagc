@@ -19,10 +19,10 @@
  */ 
 
 #include <gtk/gtk.h>
-#include "../include/gui.h"
-#include "../include/worksheet.h"
-#include "../include/menu.h"
-#include "../include/statusbar.h"
+#include "../include/gui/gui.h"
+#include "../include/gui/worksheet.h"
+#include "../include/gui/menu.h"
+#include "../include/gui/statusbar.h"
 
 int main(int argc, char *argv[]) {
 
@@ -51,7 +51,7 @@ int main(int argc, char *argv[]) {
 	gtk_container_add (GTK_CONTAINER (window), box);
 
 	/* 	 2. Create the Grid. */
-	grid 	= gtk_grid_new ();
+	grid = gtk_grid_new ();
 
 	/*   3. Create the Menu. */
 	menu 	 = gtk_menu_bar_new ();
@@ -74,6 +74,8 @@ int main(int argc, char *argv[]) {
 	cut_menu_item		= gtk_menu_item_new_with_label ("Cut");
 	copy_menu_item		= gtk_menu_item_new_with_label ("Copy");
 	paste_menu_item		= gtk_menu_item_new_with_label ("Paste");
+	undo_menu_item		= gtk_menu_item_new_with_label ("Undo");
+	redo_menu_item		= gtk_menu_item_new_with_label ("Redo");
 	delete_menu_item	= gtk_menu_item_new_with_label ("Delete");
 
 	about_menu_item		= gtk_menu_item_new_with_label ("About");
@@ -86,6 +88,8 @@ int main(int argc, char *argv[]) {
 	gtk_menu_shell_append (GTK_MENU_SHELL (filemenu), close_menu_item);
 
 	gtk_menu_item_set_submenu (GTK_MENU_ITEM (edit), editmenu);
+	gtk_menu_shell_append (GTK_MENU_SHELL (editmenu), undo_menu_item);
+	gtk_menu_shell_append (GTK_MENU_SHELL (editmenu), redo_menu_item);
 	gtk_menu_shell_append (GTK_MENU_SHELL (editmenu), cut_menu_item);
 	gtk_menu_shell_append (GTK_MENU_SHELL (editmenu), copy_menu_item);
 	gtk_menu_shell_append (GTK_MENU_SHELL (editmenu), paste_menu_item);

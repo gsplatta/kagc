@@ -1,0 +1,6 @@
+bin_PROGRAMS	= kagc
+kagc_SOURCES	= 
+INCLUDES		= @GTK_CFLAGS@
+LDADD			= @GTK_LIBS@
+CLEANFILES		= @~
+DISTCLEANFILES	= .deps/*.P

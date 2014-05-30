@@ -40,6 +40,8 @@ GtkWidget *close_menu_item;
 GtkWidget *cut_menu_item;
 GtkWidget *copy_menu_item;
 GtkWidget *paste_menu_item;
+GtkWidget *undo_menu_item;
+GtkWidget *redo_menu_item;
 GtkWidget *delete_menu_item;
 
 /* View Menu */
@@ -47,6 +49,20 @@ GtkWidget *delete_menu_item;
 /* Help Menu */
 GtkWidget *about_menu_item;
 
-/* Signals */
+/* Signals, unimplemented as of yet */
+static void new_menu_item_clicked (GtkWidget *widget);
+static void open_menu_item_clicked (GtkWidget *widget);
+static void save_menu_item_clicked (GtkWidget *widget);
+static void save_as_menu_item_clicked (GtkWidget *widget);
+static void close_menu_item_clicked (GtkWidget *widget);
+
+static void undo_menu_item_clicked (GtkWidget *widget);
+static void redo_menu_item_clicked (GtkWidget *widget);
+static void cut_menu_item_clicked (GtkWidget *widget);
+static void copy_menu_item_clicked (GtkWidget *widget);
+static void paste_menu_item_clicked (GtkWidget *widget);
+static void delete_menu_item_clicked (GtkWidget *widget);
+
+static void about_menu_item_clicked (GtkWidget *widget);
 
 #endif /* __MENU_H__ */

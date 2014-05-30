@@ -1,15 +1,8 @@
 EXE		= kagc
 
 CC		= gcc
-CFLAGS	= -std=c11 `pkg-config gtk+-3.0 --cflags`
+CFLAGS	= -std=c11 `pkg-config gtk+-3.0 --cflags` -o $(EXE)
 LDFLAGS	= `pkg-config gtk+-3.0 --libs`
-
-DESTDIR	= $(HOME)/KAGC
-INCDIR	= $(DESTDIR)/include
-BINDIR	= $(DESTDIR)/bin
-LIBDIR	= $(DESTDIR)/lib
-OBJDIR	= $(DESTDIR)/obj
-APIDIR	= $(DESTDIR)/api
 
 help:
 	@ echo "The following make targets are available: "
@@ -23,7 +16,8 @@ install-exec:
 
 install-data:
 
-gui:
+gui: 
+	$(CC) $(CFLAGS) main.c $(LDFLAGS)
 
 docs: 
 
