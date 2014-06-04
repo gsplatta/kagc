@@ -22,6 +22,7 @@
 #define __MENU_H__ 
 
 #include <gtk/gtk.h>
+#include <gdk/gdkkeysyms.h>
 
 /* GtkMenuItems */
 GtkWidget *file, *filemenu;
@@ -34,6 +35,7 @@ GtkWidget *new_menu_item;
 GtkWidget *open_menu_item;
 GtkWidget *save_menu_item;
 GtkWidget *save_as_menu_item;
+GtkWidget *file_separator_menu_item;
 GtkWidget *close_menu_item;
 
 /* Edit Menu */
@@ -42,12 +44,18 @@ GtkWidget *copy_menu_item;
 GtkWidget *paste_menu_item;
 GtkWidget *undo_menu_item;
 GtkWidget *redo_menu_item;
+GtkWidget *edit_separator_menu_item;
 GtkWidget *delete_menu_item;
 
 /* View Menu */
 
 /* Help Menu */
+GtkWidget *documentation_menu_item;
+GtkWidget *help_separator_menu_item;
 GtkWidget *about_menu_item;
+
+/* Hotkey group */
+GtkAccelGroup *accelerators;
 
 /* Signals, unimplemented as of yet */
 static void new_menu_item_clicked (GtkWidget *widget);

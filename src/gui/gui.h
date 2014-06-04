@@ -26,6 +26,18 @@
 #define DEFAULT_WIDTH 1024
 #define DEFAULT_HEIGHT 600
 
+GtkWidget *window;
+GtkWidget *box;
+GtkWidget *tab_bar;
+GtkWidget *menubar;
+GtkWidget *worksheet;
+GtkWidget *statusbar;
+GtkWidget *scroll_window;
+
+/* Initialization functions */
+static void initialize_menu ();
+static void initialize_worksheet ();
+
 /* Exit events */
 static void destroy_event (GtkWidget *widget, gpointer data);
 static gboolean delete_event (GtkWidget *widget, GdkEvent *event, gpointer data);
