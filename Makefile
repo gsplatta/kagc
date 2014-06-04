@@ -15,8 +15,8 @@ install-exec:
 
 install-data:
 
-gui: 
-	$(CC) $(CFLAGS) main.c $(LDFLAGS)
+gui:  
+	$(CC) $(CFLAGS) src/main.c $(LDFLAGS)
 
 docs: 
 
