@@ -19,10 +19,10 @@
  */ 
 
 #include <gtk/gtk.h>
-#include "../include/gui/gui.h"
-#include "../include/gui/worksheet.h"
-#include "../include/gui/menu.h"
-#include "../include/gui/statusbar.h"
+#include "gui/gui.h"
+#include "gui/worksheet.h"
+#include "gui/menu.h"
+#include "gui/statusbar.h"
 
 int main(int argc, char *argv[]) {
 
@@ -62,20 +62,20 @@ int main(int argc, char *argv[]) {
 	view = gtk_menu_item_new_with_label ("View");
 	help = gtk_menu_item_new_with_label ("Help");
 
-	new_menu_item		= gtk_menu_item_new_with_label ("New");
-	open_menu_item		= gtk_menu_item_new_with_label ("Open");
-	save_menu_item		= gtk_menu_item_new_with_label ("Save");
-	save_as_menu_item	= gtk_menu_item_new_with_label ("Save As");
-	close_menu_item		= gtk_menu_item_new_with_label ("Close");
+	new_menu_item = gtk_menu_item_new_with_label ("New");
+	open_menu_item = gtk_menu_item_new_with_label ("Open");
+	save_menu_item	= gtk_menu_item_new_with_label ("Save");
+	save_as_menu_item = gtk_menu_item_new_with_label ("Save As");
+	close_menu_item	= gtk_menu_item_new_with_label ("Close");
 
-	cut_menu_item		= gtk_menu_item_new_with_label ("Cut");
-	copy_menu_item		= gtk_menu_item_new_with_label ("Copy");
-	paste_menu_item		= gtk_menu_item_new_with_label ("Paste");
-	undo_menu_item		= gtk_menu_item_new_with_label ("Undo");
-	redo_menu_item		= gtk_menu_item_new_with_label ("Redo");
-	delete_menu_item	= gtk_menu_item_new_with_label ("Delete");
+	cut_menu_item = gtk_menu_item_new_with_label ("Cut");
+	copy_menu_item = gtk_menu_item_new_with_label ("Copy");
+	paste_menu_item	= gtk_menu_item_new_with_label ("Paste");
+	undo_menu_item = gtk_menu_item_new_with_label ("Undo");
+	redo_menu_item = gtk_menu_item_new_with_label ("Redo");
+	delete_menu_item = gtk_menu_item_new_with_label ("Delete");
 
-	about_menu_item		= gtk_menu_item_new_with_label ("About");
+	about_menu_item	= gtk_menu_item_new_with_label ("About");
 
 	gtk_menu_item_set_submenu (GTK_MENU_ITEM (file), filemenu);
 	gtk_menu_shell_append (GTK_MENU_SHELL (filemenu), new_menu_item);
