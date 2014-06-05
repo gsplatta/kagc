@@ -22,10 +22,14 @@
 #include <gdk/gdkkeysyms.h>
 
 /* GtkMenuItems */
-GtkWidget *file, *filemenu;
-GtkWidget *edit, *editmenu;
-GtkWidget *view, *viewmenu;
-GtkWidget *help, *helpmenu;
+GtkWidget *file;
+GtkWidget *filemenu;
+GtkWidget *edit;
+GtkWidget *editmenu;
+GtkWidget *view;
+GtkWidget *viewmenu;
+GtkWidget *help;
+GtkWidget *helpmenu;
 
 /* File Menu */
 GtkWidget *new_menu_item;
@@ -55,19 +59,19 @@ GtkWidget *about_menu_item;
 GtkAccelGroup *accelerators;
 
 /* Signals, unimplemented as of yet */
-static void new_menu_item_clicked (GtkWidget *widget);
-static void open_menu_item_clicked (GtkWidget *widget);
-static void save_menu_item_clicked (GtkWidget *widget);
-static void save_as_menu_item_clicked (GtkWidget *widget);
-static void close_menu_item_clicked (GtkWidget *widget);
+static void new_menu_item_clicked(GtkWidget *widget);
+static void open_menu_item_clicked(GtkWidget *widget);
+static void save_menu_item_clicked(GtkWidget *widget);
+static void save_as_menu_item_clicked(GtkWidget *widget);
+static void close_menu_item_clicked(GtkWidget *widget);
 
-static void undo_menu_item_clicked (GtkWidget *widget);
-static void redo_menu_item_clicked (GtkWidget *widget);
-static void cut_menu_item_clicked (GtkWidget *widget);
-static void copy_menu_item_clicked (GtkWidget *widget);
-static void paste_menu_item_clicked (GtkWidget *widget);
-static void delete_menu_item_clicked (GtkWidget *widget);
+static void undo_menu_item_clicked(GtkWidget *widget);
+static void redo_menu_item_clicked(GtkWidget *widget);
+static void cut_menu_item_clicked(GtkWidget *widget);
+static void copy_menu_item_clicked(GtkWidget *widget);
+static void paste_menu_item_clicked(GtkWidget *widget);
+static void delete_menu_item_clicked(GtkWidget *widget);
 
-static void about_menu_item_clicked (GtkWidget *widget);
+static void about_menu_item_clicked(GtkWidget *widget);
 
 #endif /* __MENU_H__ */

@@ -31,11 +31,11 @@ GtkWidget *statusbar;
 GtkWidget *scroll_window;
 
 /* Initialization functions */
-static void initialize_menu ();
-static void initialize_worksheet ();
+static void initialize_menu();
+static void initialize_worksheet();
 
 /* Exit events */
-static void destroy_event (GtkWidget *widget, gpointer data);
-static gboolean delete_event (GtkWidget *widget, GdkEvent *event, gpointer data);
+static void destroy_event(GtkWidget *widget, gpointer data);
+static gboolean delete_event(GtkWidget *widget, GdkEvent *event, gpointer data);
 
 #endif /* __GUI_H__ */
