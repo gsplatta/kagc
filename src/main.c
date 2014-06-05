@@ -1,7 +1,4 @@
 /* 
- * kagc is differential geometrical graphing software. main.c creates the gui
- * and runs the main program.
- * 
  * Copyright (C) 2014 Geoffrey Platta
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -46,11 +43,11 @@ int main(int argc, char *argv[])
 
 	/* 	 2. Create the Menu. */
 	initialize_menu();
-	gtk_box_pack_start(GTK_BOX(box), menubar, FALSE, FALSE, 3);
+	gtk_box_pack_start(GTK_BOX(box), menubar, FALSE, FALSE, 0);
 
 	/* 3. Create the Worksheet */
 	initialize_worksheet();
-	gtk_box_pack_end(GTK_BOX(box), scroll_window, TRUE, TRUE, 3);
+	gtk_box_pack_end(GTK_BOX(box), scroll_window, TRUE, TRUE, 0);
 	
 
 	/* 4. Create the Status Bar. */
@@ -145,7 +142,7 @@ static void initialize_menu()
 	gtk_widget_add_accelerator(new_menu_item, "activate", accelerators, GDK_KEY_n, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
 	gtk_widget_add_accelerator(open_menu_item, "activate", accelerators, GDK_KEY_o, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
 	gtk_widget_add_accelerator(save_menu_item, "activate", accelerators, GDK_KEY_s, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
-	gtk_widget_add_accelerator(save_as_menu_item, "activate", accelerators, GDK_KEY_s, GDK_CONTROL_MASK | GDK_SHIFT_MASK, GTK_ACCEL_VISIBLE);
+	gtk_widget_add_accelerator(save_as_menu_item, "activate", accelerators, GDK_KEY_s, GDK_SHIFT_MASK | GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
 	gtk_widget_add_accelerator(close_menu_item, "activate", accelerators, GDK_KEY_q, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
 
 	gtk_widget_add_accelerator(undo_menu_item, "activate", accelerators, GDK_KEY_z, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);

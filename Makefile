@@ -23,4 +23,4 @@ docs:
 check:
 
 clean: 
-	rm -f *.o
+	rm -f *.o kagc

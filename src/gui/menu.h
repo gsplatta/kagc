@@ -1,7 +1,4 @@
 /* 
- * kagc is differential geometrical graphing software. 
- * menu.h is responsible for the menu in the GUI.
- * 
  * Copyright (C) 2014 Geoffrey Platta
  * 
  * This program is free software: you can redistribute it and/or modify
