@@ -40,7 +40,7 @@
 4.	API Module
 	The API module describes how new modules can be created. New modules will have to
 	follow certain requirements in order for output to be recognised by the symbolic
-	manipulation module and graphics module.
+	manipulation module and graphics module. It will probably be based off bash script.
 
 5.	Module Module
 	The module module is responsible for the loading of imported mathematical modules.
