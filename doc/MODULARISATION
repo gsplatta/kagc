@@ -8,7 +8,6 @@ on the worksheet and is capable of symbolic manipulation and graphing of functio
 	derivative and integral, maybe among other operations, for the trigonometric functions. 
 
 2.	Parser
-	The parser
 
 3.	Graphics
 	The graphics module will require output from funcional modules to have a specific defined
