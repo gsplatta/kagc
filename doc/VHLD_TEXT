@@ -1,0 +1,58 @@
+				VERY HIGH LEVEL DESIGN DOCUMENT
+
+1.	Worksheet Module
+2.	Parsing Module
+3.	Symbolic Manipulation Module
+4.	API Module
+5.	Module Module
+6.	Module Compiler Module
+7.	Graphics Module
+
+
+1.	Worksheet Module
+	The Worksheet module is the primary interaction environment for users of KAGC. It 
+	has three modes: Text Mode, Math Mode, and Module Design Mode.
+	
+	TEXT MODE
+	Text mode is the highest-level mode available. It is capable of text formatting only.
+	
+	MATH MODE
+	Math mode is how users input information which will be treated as math. The parser
+	and the symbolic manipulation modules will operate on input in math mode. Input is 
+	passed to the parser; if the input is legal, it is passed from the parser to the 
+	symbolic manipulation module.
+
+	MODULE DESIGN MODE
+	Module design mode is for designing new mathematical modules with the API. It is a
+	simple text editor with syntax highlighting. Any lint-type functionality can be
+	introduced later; the worksheet and the module design mode should be written in such
+	a way that the introduction of lint functionality won't require an extensive rewrite.
+
+2.	Parsing Module
+	The parsing module will tokenize input from math mode and checks that the input is
+	legal before passing input to the symbolic manipulation module.
+
+3.	Symbolic Manipulation Module
+	The symbolic manipulation module solves input or prepares the input for the graphical
+	module. The manner of obtaining solutions or formatting for the graphics module
+	is passed to the symbolic manipulation module from the module module. 
+
+4.	API Module
+	The API module describes how new modules can be created. New modules will have to
+	follow certain requirements in order for output to be recognised by the symbolic
+	manipulation module and graphics module.
+
+5.	Module Module
+	The module module is responsible for the loading of imported mathematical modules.
+	Valid operations and their syntax are passed to the parser on the loading of a
+	new module. The means of obtaining answers are passed to the symbolic manipulation
+	module.
+
+6.	Module Compilation Module
+	The module compilation module is responsible for ensuring that new modules follow
+	the expected format and requirements of a new module, so that the symbolic
+	manipulator and graphical modules can interpret it correctly.
+
+7.	Graphics Module
+	The graphics module accepts data from the symbolic manipulation module and graphs
+	it using OpenGL.
