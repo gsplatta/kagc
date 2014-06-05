@@ -1,0 +1,15 @@
+KAGC will ideally be a program which accepts text input in a sort of "math mode" 
+on the worksheet and is capable of symbolic manipulation and graphing of functions.
+
+1.	API
+	There should be an API which allows for custom functions and operations to be defined.
+	Therefore, KAGC should have a very simple language to define functions and the operations
+	which can be performed on them. For example, a Trigonometric Module would define the
+	derivative and integral, maybe among other operations, for the trigonometric functions. 
+
+2.	Parser
+	The parser
+
+3.	Graphics
+	The graphics module will require output from funcional modules to have a specific defined
+	format.
