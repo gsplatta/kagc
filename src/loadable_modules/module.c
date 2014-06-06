@@ -15,9 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-
 #include "module.h"
-
 
 /*
  * Creates and returns a loadable_module structure and fills it with 
@@ -27,12 +25,12 @@
  */
 loadble_module* init_loadable_module(const char *module_path)
 {	
-	if(module_path) {  //prevent handles to the main program
+	if (module_path) {  //prevent handles to the main program
 		loadable_module *module = (loadable_module*)malloc(sizeof(loadable_module));
 		module->handle = dlopen(module_path, RTLD_LAZY); //lazy evaluation
 	}
 	
-	if(!module->handle) {
+	if (!module->handle || module == NULL) {
 		free(module);
 		module = NULL;
 	} else {
@@ -56,8 +54,7 @@ int load_module(loadable_module* module)
 int unload_module(loadable_module *module)
 {
 	int success = -1;
-
-	if(module->handle) {
+	if (module->handle) {
 		success = dlclose(module->handle);			
 	}
 	return success;
