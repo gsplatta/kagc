@@ -1,14 +1,15 @@
-KAGC will ideally be a program which accepts text input in a sort of "math mode" 
-on the worksheet and is capable of symbolic manipulation and graphing of functions.
+Before developing the API, first the understanding of what a module is should be developed. A module should probably best be built off topics in analysis and abstract algebra.
 
-1.	API
-	There should be an API which allows for custom functions and operations to be defined.
-	Therefore, KAGC should have a very simple language to define functions and the operations
-	which can be performed on them. For example, a Trigonometric Module would define the
-	derivative and integral, maybe among other operations, for the trigonometric functions. 
+In algebras, the following concepts are important: sets, groups, rings, and fields.
 
-2.	Parser
+We've gone over sets in both discrete math classes, and if you are taking linear algebra you will probably cover it in more depth than in discrete. It is an intuitive enough concept, and very important in all higher maths. An example of a set would be the set of all numbers between zero and one. All numbers between zero and one can be thought of as an infinite sequence of numbers where no members of the set have the same sequence. A version of this example--actually, [0,1]x[0,1], the Cartesian product of all numbers between zero and one--was used in my differential geometry text, and I did not expect this sort of understanding and so didn't come close to understanding the example.
 
-3.	Graphics
-	The graphics module will require output from funcional modules to have a specific defined
-	format.
+A group is a set of elements which, when an operation is applied, results in an element within the group. For example, the real numbers and addition form a group; you can never perform an addition which gives a non-real number. Real numbers and multiplication also form a group; the reals and division do not, because division by zero is undefined; additionally, real numbers and exponentiation do not form a group, because the even roots of negative numbers have complex results. More examples of groups are modulus arithmetic, in which addition and multiplication yield results in [0,n) in the set x mod n for any x.
+
+A ring is a group in which addition and multiplication are defined. The complex numbers form a ring, as do all subsets of complex numbers (such as the reals R, rationals Q, integers Z, etc).
+
+Anyway, the point is, I am thinking that there might need to be different sorts of modules. Algebraic modules could define sets and/or their operations, whether the set and the operation form a group or not. Calculus modules could define rates of change in algebraic modules. Unfortunately the difference between a calculus and an algebra seems to be poorly defined, so defining a calculus module as describing rates of change within an algebra is my own definition and probably not accurate.
+
+Geometries and topologies depend heavily on abstract algebra, and differential geometry and differential topology involve the application of calculus to the sets in a geometric or topological "structure".
+
+But yeah, what a module describes should be more or less set in stone before the API is started.
