@@ -1,0 +1,68 @@
+This document exists to describe keywords and the structure of the KAGC programming language
+Begun 11 June 2014
+
+"Interface" Keywords:
+	These are referred to as interfaces because the use of the following keywords requires that certain operations be
+	defined, except for a set which only requires the definition of elements. 
+
+	set:
+		A set is the most basic of the "interfaces". No operations are necessarily defined.
+	group:
+
+	ring:
+
+	field:
+
+	vectorspace:
+		A vectorspace is a field in which all elements of the set are defined for the operations of addition and scalar
+		multiplication. When defining a vectorspace, these operations must be defined for all elements such that they 
+		return elements of the vectorspace. I don't expect it to be possible to check if a vectorspace is actually a 
+		vector space, but defining a set as a vectorspace allows certain assumptions to be made by the symbolic manipulation 
+		module.
+
+Functional Keywords:
+	function:
+		A function can be defined from any defined interface to another defined interface, and the output of a function can
+		itself be treated as a set, group, ring, field, or vectorspace.
+
+	domain:
+	codomain:
+	range:
+	image:
+	preimage:
+	operation:
+
+	commutative:
+	anticommutative:
+	noncommutative:
+	associative:
+	nonassociative:
+
+Constants:
+	POSITIVE_INFINITY
+	NEGATIVE_INFINITY
+
+Basic (Useful) Vector Spaces:
+	_R_		[Reals]
+	_C_		[Complex Numbers]
+			_C_ is a group over all noncomparative operations except division; however, (_C_ \ 0) is a group over division.
+			Operations of comparison other than equality (such as greater than, less than, etc.) are not defined; i.e. 
+			it cannot be determined if, e.g., 3 + 2i > 4 + i. Both components of a complex number can be subjected to 
+			comparative operations, as they are in _R_.
+	_Z_		[Integers]
+	_H_		[Quaternions]
+			_H_ is an extension of _C_.
+	_O_		[Octonions]
+			_O_ is an extension of _H_.
+
+Unassociated Keywords:
+	from
+	to
+	if
+	then
+	elsif
+	else
+	end
+	for
+	while
+	in

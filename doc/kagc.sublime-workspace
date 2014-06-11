@@ -1,0 +1,417 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"d",
+				"delete_event"
+			],
+			[
+				"av",
+				"activate"
+			],
+			[
+				"ac",
+				"activate"
+			],
+			[
+				"GDK_",
+				"GDK_CONTROL_MASK"
+			],
+			[
+				"cl",
+				"close_menu_item"
+			],
+			[
+				"save",
+				"save_as_menu_item"
+			],
+			[
+				"GCO",
+				"GDK_CONTROL_MASK"
+			],
+			[
+				"ed",
+				"edit_separator_menu_item"
+			],
+			[
+				"file",
+				"file_separator_menu_item"
+			],
+			[
+				"ini",
+				"initialize_worksheet"
+			],
+			[
+				"initi",
+				"initialize_menu"
+			],
+			[
+				"Gtk",
+				"GtkSeparatorMenuItem"
+			],
+			[
+				"a",
+				"activate"
+			],
+			[
+				"do",
+				"documentation_menu_item"
+			],
+			[
+				"del",
+				"delete_menu_item"
+			],
+			[
+				"red",
+				"redo_menu_item"
+			],
+			[
+				"und",
+				"undo_menu_item"
+			],
+			[
+				"GDK",
+				"GDK_CONTROL_MASK"
+			],
+			[
+				"co",
+				"copy_menu_item"
+			],
+			[
+				"GTKACCE",
+				"GTK_ACCEL_VISIBLE"
+			],
+			[
+				"op",
+				"open_menu_item"
+			],
+			[
+				"se",
+				"separator_menu_item"
+			],
+			[
+				"h",
+				"helpmenu"
+			],
+			[
+				"gmi",
+				"gtk_menu_item_new_with_label"
+			],
+			[
+				"gtkb",
+				"gtk_box_pack_start"
+			],
+			[
+				"hl",
+				"help"
+			],
+			[
+				"mb",
+				"menubar"
+			],
+			[
+				"sta",
+				"statusbar"
+			],
+			[
+				"wig",
+				"widget"
+			],
+			[
+				"de",
+				"def	#ifndef … #define … #endif"
+			],
+			[
+				"destroy",
+				"destroy_event"
+			],
+			[
+				"G",
+				"G_CALLBACK"
+			],
+			[
+				"i",
+				"inc	#include \"…\""
+			],
+			[
+				"ma",
+				"main	main()"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "MODULARISATION",
+			"settings":
+			{
+				"buffer_size": 2562,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"ip",
+				"Package Control: Install Package"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"IP",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"I P",
+				"Package Control: Install Package"
+			],
+			[
+				"P I",
+				"Package Control: Install Package"
+			],
+			[
+				"Pac I",
+				"Package Control: Install Package"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Packag",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 601.0
+	},
+	"console":
+	{
+		"height": 572.0,
+		"history":
+		[
+			" import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/geoffrey/KAGC/kagc/src/main.c",
+		"/home/geoffrey/KAGC/kagc/src/gui/gui.h",
+		"/home/geoffrey/KAGC/kagc/src/gui/menu.h",
+		"/home/geoffrey/KAGC/kagc/src/loadable_modules/module.c",
+		"/home/geoffrey/KAGC/kagc/src/loadable_modules/module.h",
+		"/home/geoffrey/KAGC/kagc/include/gui/menu.h",
+		"/home/geoffrey/KAGC/kagc/include/gui/worksheet.h",
+		"/home/geoffrey/KAGC/testing/src/gui/worksheet.h",
+		"/home/geoffrey/KAGC/testing/src/gui/statusbar.h",
+		"/home/geoffrey/KAGC/testing/src/gui/menu.h",
+		"/home/geoffrey/KAGC/testing/src/main.c",
+		"/home/geoffrey/KAGC/kagc/include/gui/statusbar.h",
+		"/home/geoffrey/KAGC/kagc/include/gui/gui.h",
+		"/home/geoffrey/KAGC/testing/src/gui/gui.h",
+		"/home/geoffrey/kagc/src/main.c",
+		"/home/geoffrey/kagc/include/gui/gui.h",
+		"/home/geoffrey/kagc/include/gui/menu.h",
+		"/home/geoffrey/kagc/include/gui/worksheet.h",
+		"/home/geoffrey/kagc/include/gui/statusbar.h",
+		"/home/geoffrey/Documents/gtk+-3.0/main.c",
+		"/home/geoffrey/kagc/configure.ac",
+		"/home/geoffrey/kagc/configure.scan",
+		"/home/geoffrey/kagc/aclocal.m4",
+		"/home/geoffrey/kagc/lib/Automake.am",
+		"/home/geoffrey/kagc/src/Makefile.in",
+		"/home/geoffrey/kagc/src/configure.ac",
+		"/home/geoffrey/kagc/Makefile.am",
+		"/home/geoffrey/kagc/bin/Automake.am",
+		"/home/geoffrey/kagc/api/Automake.am",
+		"/home/geoffrey/kagc/doc/Automake.am",
+		"/home/geoffrey/kagc/include/Automake.am",
+		"/home/geoffrey/kagc/src/Makefile.am",
+		"/home/geoffrey/kagc/include/parser/parser.h",
+		"/home/geoffrey/kagc/src/parser/parser.c",
+		"/home/geoffrey/kagc/kagc.sublime-project",
+		"/home/geoffrey/kagc/include/worksheet.h",
+		"/home/geoffrey/kagc/include/statusbar.h",
+		"/home/geoffrey/kagc/include/menu.h",
+		"/home/geoffrey/kagc/src/config.h.in",
+		"/home/geoffrey/kagc/src/Makefile",
+		"/home/geoffrey/kagc/src/configure.scan",
+		"/home/geoffrey/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/geoffrey/.config/sublime-text-3/Packages/User/JSON.sublime-settings",
+		"/home/geoffrey/.config/sublime-text-3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/home/geoffrey/Documents/rust/hello.rc",
+		"/home/geoffrey/.config/sublime-text-3/Packages/User/Plain text.sublime-settings"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"pressed"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"clicked"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "MODULARISATION",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2562,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 55.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "kagc.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 154.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
